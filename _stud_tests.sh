@@ -322,7 +322,7 @@ do
 			fi
 
 		else
-			java -jar "$PATH_TO_apgdiff"apgdiff-2.4.jar ./ref-out/${TESTS[$counter]}.out ./out/${TESTS[$counter]}.out &> ./out/${TESTS[$counter]}_diff.ddl
+			java -jar "$PATH_TO_apgdiff"apgdiff-2.4.jar ./out/${TESTS[$counter]}.out ./ref-out/${TESTS[$counter]}.out &> ./out/${TESTS[$counter]}_diff.ddl
 		fi
 
 
