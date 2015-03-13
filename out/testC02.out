@@ -1,6 +1,0 @@
-
-CREATE TABLE a (
-	prk_a_id INT PRIMARY KEY,
-	id FLOAT
-);
-
