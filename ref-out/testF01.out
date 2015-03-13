@@ -1,0 +1,19 @@
+CREATE TABLE country(
+  prk_country_id INT PRIMARY KEY,
+  city2_id INT,
+  city1_id INT,
+  capital_id INT,
+  name NVARCHAR,
+  population FLOAT
+);
+
+CREATE TABLE city(
+  prk_city_id INT PRIMARY KEY,
+  value NTEXT
+);
+
+CREATE TABLE capital(
+  prk_capital_id INT PRIMARY KEY,
+  value NTEXT
+);
+

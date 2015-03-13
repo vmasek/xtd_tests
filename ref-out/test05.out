@@ -1,0 +1,53 @@
+CREATE TABLE description(
+   prk_description_id INT PRIMARY KEY,
+   book_id INT,
+   value NTEXT
+);
+
+CREATE TABLE title(
+   prk_title_id INT PRIMARY KEY,
+   book_id INT,
+   value NTEXT
+);
+
+CREATE TABLE price(
+   prk_price_id INT PRIMARY KEY,
+   book_id INT,
+   value FLOAT
+);
+
+CREATE TABLE author(
+   prk_author_id INT PRIMARY KEY,
+   book_id INT,
+   value NTEXT
+);
+
+CREATE TABLE library(
+   prk_library_id INT PRIMARY KEY
+);
+
+CREATE TABLE book(
+   prk_book_id INT PRIMARY KEY,
+   library_id INT,
+   room_id INT,
+   id NVARCHAR
+);
+
+CREATE TABLE publish_date(
+   prk_publish_date_id INT PRIMARY KEY,
+   book_id INT,
+   value NTEXT
+);
+
+CREATE TABLE genre(
+   prk_genre_id INT PRIMARY KEY,
+   book_id INT,
+   value NTEXT
+);
+
+CREATE TABLE room(
+   prk_room_id INT PRIMARY KEY,
+   library_id INT,
+   id INT
+);
+

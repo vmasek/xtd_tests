@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Earth>
+	<country name="Slovenská republika" population="1.234">
+		<capital>Bratislava</capital>
+	</country>
+	<country name="Česká republika" population="1E10">
+		<capital>Praha</capital>
+		<city>Brno</city>
+		<city>Olomouc</city>
+	</country>
+	<country name="Slovenská republika" population="7.35656565e-5">
+		<capital>Bratislava</capital>
+	</country>
+	<country name="Česká republika" population="-7.35656565e-3" />
+	<country name="Česká republika" population="7.1" />
+	<country name="Česká republika" population="7.1e+38" />
+</Earth>

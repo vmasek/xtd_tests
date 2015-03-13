@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<a attribute="1">
+		<b bool="TrUe" />
+		<b/>
+		<b/>
+	</a>
+	<a>
+		<b bool="FALSE"/>
+		<b integer="550"/>
+	</a>
+	<a attribute="10">
+		<c/>
+		<b bool="True"/>
+		<b integer="100"/>
+		<b float="10.5"/>
+		<b bool="1"/>
+	</a>
+	<a nvarchar="nvarchar">
+		<c>
+			10E100
+		</c>
+	</a>
+	<a>
+		<b/>
+	</a>
+</root>

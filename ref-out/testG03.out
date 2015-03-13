@@ -1,0 +1,34 @@
+<tables>
+   <table name="a">
+      <relation to="a" relation_type="1:1" />
+      <relation to="b" relation_type="N:M" />
+   </table>
+   <table name="c">
+      <relation to="c" relation_type="1:1" />
+      <relation to="y" relation_type="N:1" />
+      <relation to="x" relation_type="N:1" />
+      <relation to="z" relation_type="N:1" />
+   </table>
+   <table name="b">
+      <relation to="b" relation_type="1:1" />
+      <relation to="a" relation_type="N:M" />
+   </table>
+   <table name="y">
+      <relation to="y" relation_type="1:1" />
+      <relation to="x" relation_type="N:M" />
+      <relation to="c" relation_type="1:N" />
+      <relation to="z" relation_type="N:M" />
+   </table>
+   <table name="x">
+      <relation to="x" relation_type="1:1" />
+      <relation to="y" relation_type="N:M" />
+      <relation to="c" relation_type="1:N" />
+      <relation to="z" relation_type="N:M" />
+   </table>
+   <table name="z">
+      <relation to="z" relation_type="1:1" />
+      <relation to="y" relation_type="N:M" />
+      <relation to="x" relation_type="N:M" />
+      <relation to="c" relation_type="1:N" />
+   </table>
+</tables>

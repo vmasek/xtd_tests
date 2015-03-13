@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tables>
+    <table name="description">
+        <relation to="book" relation_type="1:N" />
+        <relation to="room" relation_type="1:N" />
+        <relation to="library" relation_type="1:N" />
+        <relation to="description" relation_type="1:1" />
+        <relation to="title" relation_type="N:M" />
+        <relation to="publish_date" relation_type="N:M" />
+        <relation to="price" relation_type="N:M" />
+        <relation to="author" relation_type="N:M" />
+        <relation to="genre" relation_type="N:M" />
+    </table>
+    <table name="title">
+        <relation to="book" relation_type="1:N" />
+        <relation to="room" relation_type="1:N" />
+        <relation to="library" relation_type="1:N" />
+        <relation to="description" relation_type="N:M" />
+        <relation to="title" relation_type="1:1" />
+        <relation to="publish_date" relation_type="N:M" />
+        <relation to="price" relation_type="N:M" />
+        <relation to="author" relation_type="N:M" />
+        <relation to="genre" relation_type="N:M" />
+    </table>
+    <table name="price">
+        <relation to="book" relation_type="1:N" />
+        <relation to="room" relation_type="1:N" />
+        <relation to="library" relation_type="1:N" />
+        <relation to="description" relation_type="N:M" />
+        <relation to="title" relation_type="N:M" />
+        <relation to="publish_date" relation_type="N:M" />
+        <relation to="price" relation_type="1:1" />
+        <relation to="author" relation_type="N:M" />
+        <relation to="genre" relation_type="N:M" />
+    </table>
+    <table name="author">
+        <relation to="book" relation_type="1:N" />
+        <relation to="room" relation_type="1:N" />
+        <relation to="library" relation_type="1:N" />
+        <relation to="description" relation_type="N:M" />
+        <relation to="title" relation_type="N:M" />
+        <relation to="publish_date" relation_type="N:M" />
+        <relation to="price" relation_type="N:M" />
+        <relation to="author" relation_type="1:1" />
+        <relation to="genre" relation_type="N:M" />
+    </table>
+    <table name="library">
+        <relation to="room" relation_type="N:1" />
+        <relation to="book" relation_type="N:1" />
+        <relation to="library" relation_type="1:1" />
+        <relation to="description" relation_type="N:1" />
+        <relation to="title" relation_type="N:1" />
+        <relation to="publish_date" relation_type="N:1" />
+        <relation to="price" relation_type="N:1" />
+        <relation to="author" relation_type="N:1" />
+        <relation to="genre" relation_type="N:1" />
+    </table>
+    <table name="room">
+        <relation to="library" relation_type="1:N" />
+        <relation to="book" relation_type="N:1" />
+        <relation to="room" relation_type="1:1" />
+        <relation to="description" relation_type="N:1" />
+        <relation to="title" relation_type="N:1" />
+        <relation to="publish_date" relation_type="N:1" />
+        <relation to="price" relation_type="N:1" />
+        <relation to="author" relation_type="N:1" />
+        <relation to="genre" relation_type="N:1" />      
+    </table>
+    <table name="book">
+        <relation to="book" relation_type="1:1" />
+        <relation to="room" relation_type="1:N" />
+        <relation to="library" relation_type="1:N" />
+        <relation to="description" relation_type="N:1" />
+        <relation to="title" relation_type="N:1" />
+        <relation to="publish_date" relation_type="N:1" />
+        <relation to="price" relation_type="N:1" />
+        <relation to="author" relation_type="N:1" />
+        <relation to="genre" relation_type="N:1" />
+    </table>
+    <table name="publish_date">
+        <relation to="book" relation_type="1:N" />
+        <relation to="room" relation_type="1:N" />
+        <relation to="library" relation_type="1:N" />
+        <relation to="description" relation_type="N:M" />
+        <relation to="title" relation_type="N:M" />
+        <relation to="publish_date" relation_type="1:1" />
+        <relation to="price" relation_type="N:M" />
+        <relation to="author" relation_type="N:M" />
+        <relation to="genre" relation_type="N:M" />
+    </table>
+    <table name="genre">
+        <relation to="book" relation_type="1:N" />
+        <relation to="room" relation_type="1:N" />
+        <relation to="library" relation_type="1:N" />
+        <relation to="description" relation_type="N:M" />
+        <relation to="title" relation_type="N:M" />
+        <relation to="publish_date" relation_type="N:M" />
+        <relation to="price" relation_type="N:M" />
+        <relation to="author" relation_type="N:M" />
+        <relation to="genre" relation_type="1:1" />
+    </table>
+</tables>

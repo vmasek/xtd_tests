@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+  <part number="1">
+   <alphabet a="True" b="True" c="True"/>
+   <alphabet c="True" d="True" e="True"/>
+   <alphabet f="True" g="True" a="True"/>
+   <alphabet H="True" h="True" i="True"/>
+   <alphabet j="True" k="True"/>
+   <alphabet l="True" L="True" m="True"/>
+  </part>
+  <part number="2">
+   <alphabet n="True" o="True" p="True"/>
+   <alphabet q="True" r="True" s="True"/>
+   <alphabet u="True" t="True" s="True"/>
+   <alphabet v="True" w="True" a="True"/>
+   <alphabet b="True" c="True"/>
+   <alphabet z="True" a="True" f="True"/>
+  </part>
+</catalog>

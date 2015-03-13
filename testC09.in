@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<a b="10"> 
+		<b> 
+			vutbr
+		</b>
+	</a>
+	<a b="asd">
+		<b> 
+			vutbr
+		</b>
+	</a>	
+</root>

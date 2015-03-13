@@ -1,0 +1,5 @@
+PHP Warning:  fopen(./asdasdadadasdadasdadddewetest666.in): failed to open stream: No such file or directory in /home/shooter/PROJECTS/PhpStorm/XTD/XTD.php on line 33
+PHP Stack trace:
+PHP   1. {main}() /home/shooter/PROJECTS/PhpStorm/XTD/XTD.php:0
+PHP   2. fopen() /home/shooter/PROJECTS/PhpStorm/XTD/XTD.php:33
+Neexistující zadaný vstupní soubor nebo chyba otevření zadaného vstupního souboru pro čtení.

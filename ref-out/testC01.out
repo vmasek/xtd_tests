@@ -1,0 +1,12 @@
+CREATE TABLE a(
+  prk_a_id INT PRIMARY KEY
+);
+
+CREATE TABLE c(
+  prk_c_id INT PRIMARY KEY
+);
+
+CREATE TABLE b(
+  prk_b_id INT PRIMARY KEY
+);
+

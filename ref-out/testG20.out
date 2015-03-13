@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tables>
+	<table name="url">
+		<relation to="url" relation_type="1:1" />
+		<relation to="priority" relation_type="N:1" />
+		<relation to="changefreq" relation_type="N:1" />
+		<relation to="loc" relation_type="N:1" />
+	</table>
+	<table name="priority">
+		<relation to="url" relation_type="1:N" />
+		<relation to="priority" relation_type="1:1" />
+		<relation to="changefreq" relation_type="N:M" />
+		<relation to="loc" relation_type="N:M" />
+	</table>
+	<table name="changefreq">
+		<relation to="url" relation_type="1:N" />
+		<relation to="changefreq" relation_type="1:1" />
+		<relation to="priority" relation_type="N:M" />
+		<relation to="loc" relation_type="N:M" />
+	</table>
+	<table name="loc">
+		<relation to="url" relation_type="1:N" />
+		<relation to="loc" relation_type="1:1" />
+		<relation to="priority" relation_type="N:M" />
+		<relation to="changefreq" relation_type="N:M" />
+	</table>
+</tables>

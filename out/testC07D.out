@@ -1,0 +1,21 @@
+
+CREATE TABLE a (
+	prk_a_id INT PRIMARY KEY,
+	attribute INT,
+	nvarchar NVARCHAR
+);
+
+CREATE TABLE b (
+	prk_b_id INT PRIMARY KEY,
+	a_id INT,
+	bool BIT,
+	integer INT,
+	float FLOAT
+);
+
+CREATE TABLE c (
+	prk_c_id INT PRIMARY KEY,
+	a_id INT,
+	value FLOAT
+);
+

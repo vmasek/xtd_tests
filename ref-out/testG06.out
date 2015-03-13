@@ -1,0 +1,18 @@
+<tables>
+   <table name="table">
+      <relation to="table" relation_type="1:1" />
+      <relation to="col" relation_type="N:1" />
+   </table>
+   <table name="data">
+      <relation to="data" relation_type="1:1" />
+      <relation to="row" relation_type="N:1" />
+   </table>
+   <table name="col">
+      <relation to="col" relation_type="1:1" />
+      <relation to="table" relation_type="1:N" />
+   </table>
+   <table name="row">
+      <relation to="row" relation_type="1:1" />
+      <relation to="data" relation_type="1:N" />
+   </table>
+</tables>

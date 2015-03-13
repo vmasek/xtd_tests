@@ -1,0 +1,12 @@
+------------------------------------------------------------------------------
+./src/xtd.py
+===
+--help                 - Show help
+--input=filename.ext   - Input file with xml
+--output=filename.ext  - Output file with xml
+--header='text'        - Header included on the top of the output
+--etc=num              - Maximal number of columns from the same element type
+-a                     - Columns from attributes is not created
+-b                     - More same elements seem like one
+-g                     - XML with relations are on the output
+------------------------------------------------------------------------------
