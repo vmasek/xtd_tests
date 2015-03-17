@@ -152,6 +152,16 @@ TESTS_OPTIONS=(
 					"--input=./testC07.in -g -a -b --output=${LOCAL_OUT_PATH}testG09C.out 2> ${LOG_PATH}testG09C.err"
 					"--input=./testG20.in -g --output=${LOCAL_OUT_PATH}testG20.out 2> ${LOG_PATH}testG20.err"
 
+					"--input=./testy/test03.in --isvalid=./testy/testH01.in --output=${LOCAL_OUT_PATH}testH01.out 2> ${LOG_PATH}testH01.err"
+					"--input=./testy/test03.in --isvalid=./testy/testH02.in --output=${LOCAL_OUT_PATH}testH02.out 2> ${LOG_PATH}testH02.err"
+					"--input=./testy/test03.in --isvalid=./testy/testH03.in --output=${LOCAL_OUT_PATH}testH03A.out 2> ${LOG_PATH}testH03A.err"
+					"--input=./testy/test03.in --isvalid=./testy/testH03.in -a --output=${LOCAL_OUT_PATH}testH03B.out 2> ${LOG_PATH}testH03B.err"
+					"--input=./testy/test03.in --isvalid=./testy/testH04.in --output=${LOCAL_OUT_PATH}testH04.out 2> ${LOG_PATH}testH04.err"
+					"--input=./testy/test03.in --isvalid=./testy/testH05.in --output=${LOCAL_OUT_PATH}testH05A.out 2> ${LOG_PATH}testH05A.err"
+					"--input=./testy/test03.in --isvalid=./testy/testH05.in -b --output=${LOCAL_OUT_PATH}testH05B.out 2> ${LOG_PATH}testH05B.err"
+					"--input=./testy/test03.in --isvalid=./testy/testH06.in --output=${LOCAL_OUT_PATH}testH06.out 2> ${LOG_PATH}testH06.err"
+			
+
 			)
 
 
@@ -212,6 +222,15 @@ TESTS_RET_CODES=(
 					"0"
 					"0"
 
+					"0"
+					"91"
+					"91"
+					"0"
+					"91"
+					"91"
+					"0"
+					"0"
+
 				)
 
 TESTS=(
@@ -269,6 +288,15 @@ TESTS=(
 		"testG09B"
 		"testG09C"
 		"testG20"
+
+		"testH01"
+		"testH02"
+		"testH03A"
+		"testH03B"
+		"testH04"
+		"testH05A"
+		"testH05B"
+		"testH06"
 	)
 
 
