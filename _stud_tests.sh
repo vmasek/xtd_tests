@@ -70,7 +70,7 @@
 
 # EDIT to correct path and scriptname !!!
 PATH_TO_XTD="/home/shooter/PROJECTS/PhpStorm/XTD/"
-TASK=XTD
+TASK=xtd
 
 PATH_TO_TESTS=$(pwd)
 PATH_TO_apgdiff="$PATH_TO_TESTS/tools/apgdiff-2.4/"
@@ -285,9 +285,7 @@ counter=0
 for options in "${TESTS_OPTIONS[@]}"
 do
 
-	
-
-	eval "$INTERPRETER" "$PATH_TO_XTD$TASK.$EXTENSION" $options
+	eval $INTERPRETER "$PATH_TO_XTD$TASK.$EXTENSION" ${options}
 	code=$?
 
 	if [[ $code -ne "${TESTS_RET_CODES[$counter]}" ]]; then
@@ -311,11 +309,10 @@ do
 			continue
 		fi
 
-
 		#running diff tools
 		if [[ ${TESTS[$counter]} == "test11" || ${TESTS[$counter]} == "test12" || ${TESTS[$counter]} == *G* ]]; then
 
-			java -jar "$PATH_TO_jexamxml"jexamxml.jar ./out/${TESTS[$counter]}.out ./ref-out/${TESTS[$counter]}.out &> ./out/${TESTS[$counter]}_diff.ddl
+			java -jar "$PATH_TO_jexamxml"jexamxml.jar ./out/${TESTS[$counter]}.out ./ref-out/${TESTS[$counter]}.out delta.xml xtd_options &> ./out/${TESTS[$counter]}_diff.ddl
 
 			if [[ $(cat ./out/${TESTS[$counter]}_diff.ddl) =~ "Two files are identical" ]]; then
 				rm out/${TESTS[$counter]}_diff.ddl 2>/dev/null
@@ -324,8 +321,6 @@ do
 		else
 			java -jar "$PATH_TO_apgdiff"apgdiff-2.4.jar ./out/${TESTS[$counter]}.out ./ref-out/${TESTS[$counter]}.out &> ./out/${TESTS[$counter]}_diff.ddl
 		fi
-
-
 
 		if [[ $? -ne 0 || -s out/${TESTS[$counter]}_diff.ddl ]]; then
 			echo
@@ -342,7 +337,6 @@ do
 		fi
 
 	fi
-
 
 	#delete empty .err
 	if [[ ! -s out/${TESTS[$counter]}.err ]]; then
