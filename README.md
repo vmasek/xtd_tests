@@ -1,5 +1,5 @@
 # xtd_tests
-Test for IPP XTD project by xmasek15
+Test for IPP XTD project by xmasek15 ( extended tests created by xholub31)
 
  
 Zautomatizovane spustanie a testovanie jednotlivych situacii, doplnenych par 
