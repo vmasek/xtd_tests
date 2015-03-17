@@ -312,7 +312,7 @@ do
 		#running diff tools
 		if [[ ${TESTS[$counter]} == "test11" || ${TESTS[$counter]} == "test12" || ${TESTS[$counter]} == *G* ]]; then
 
-			java -jar "$PATH_TO_jexamxml"jexamxml.jar ./out/${TESTS[$counter]}.out ./ref-out/${TESTS[$counter]}.out xtd_options &> ./out/${TESTS[$counter]}_diff.ddl
+			java -jar "$PATH_TO_jexamxml"jexamxml.jar ./out/${TESTS[$counter]}.out ./ref-out/${TESTS[$counter]}.out delta.xml xtd_options &> ./out/${TESTS[$counter]}_diff.ddl
 
 			if [[ $(cat ./out/${TESTS[$counter]}_diff.ddl) =~ "Two files are identical" ]]; then
 				rm out/${TESTS[$counter]}_diff.ddl 2>/dev/null
