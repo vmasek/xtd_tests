@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+   <library>
+	   <room id="1">
+		   <book id="bk101">
+			  <author>Gambardella, Matthew</author>
+			  <title>XML Developer's Guide</title>
+			  <genre>Computer</genre>
+			  <price>44.95</price>
+			  <publish_date>2000-10-01</publish_date>
+			  <description>An in-depth look at creating applications 
+			  with XML.</description>
+		   </book>
+		</room>
+		<room id="2">
+		   <book id="bk102">
+			  <author>Ralls, Kim</author>
+			  <title>Midnight Rain</title>
+			  <genre>Fantasy</genre>
+			  <price>5.95</price>
+			  <publish_date>2000-12-16</publish_date>
+			  <description>A former architect battles corporate zombies, 
+			  an evil sorceress, and her own childhood to become queen 
+			  of the world.</description>
+		   </book>
+	   </room>
+   </library>
+   <library>
+	   <book id="bk103">
+		  <author>Corets, Eva</author>
+		  <title>Maeve Ascendant</title>
+		  <genre>Fantasy</genre>
+		  <price>5.95</price>
+		  <publish_date>2000-11-17</publish_date>
+		  <description>After the collapse of a nanotechnology 
+		  society in England, the young survivors lay the 
+		  foundation for a new society.</description>
+	   </book>
+	   <book id="bk104">
+		  <author>Corets, Eva</author>
+		  <title>Oberon's Legacy</title>
+		  <genre>Fantasy</genre>
+		  <price>5.95</price>
+		  <publish_date>2001-03-10</publish_date>
+		  <description>In post-apocalypse England, the mysterious 
+		  agent known only as Oberon helps to create a new life 
+		  for the inhabitants of London. Sequel to Maeve 
+		  Ascendant.</description>
+	   </book>
+	   <book id="bk111">
+		  <author>O'Brien, Tim</author>
+		  <title>MSXML3: A Comprehensive Guide</title>
+		  <genre>Computer</genre>
+		  <price>36.95</price>
+		  <publish_date>2000-12-01</publish_date>
+		  <description>The Microsoft MSXML3 parser is covered in 
+		  detail, with attention to XML DOM interfaces, XSLT processing, 
+		  SAX and more.</description>
+	   </book>
+	   <book id="bk112">
+		  <author>Galos, Mike</author>
+		  <title>Visual Studio 7: A Comprehensive Guide</title>
+		  <genre>Computer</genre>
+		  <price>49.95</price>
+		  <publish_date>2001-04-16</publish_date>
+		  <description>Microsoft Visual Studio 7 is explored in depth,
+		  looking at how Visual Basic, Visual C++, C#, and ASP+ are 
+		  integrated into a comprehensive development 
+		  environment.</description>
+	   </book>
+   </library>
+</catalog>
