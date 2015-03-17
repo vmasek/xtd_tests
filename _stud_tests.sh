@@ -271,6 +271,11 @@ TESTS=(
 		"testG20"
 	)
 
+
+red='\e[0;31m'
+green='\e[0;32m'
+NC='\e[0m' # No Color
+
 if [[ $1 == "--hide" ]]; then
 	hide_ok=true
 else
