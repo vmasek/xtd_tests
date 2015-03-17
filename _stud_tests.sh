@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 # IPP - xtd - !!! UPRAVENE !!! doplňkové testy - 2014/2015
@@ -69,8 +69,8 @@
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 # EDIT to correct path and scriptname !!!
-PATH_TO_XTD="/home/shooter/PROJECTS/PhpStorm/XTD/"
-TASK=xtd
+PATH_TO_XTD=$(pwd) # or any other path to your script
+TASK=xtd # name of script
 
 PATH_TO_TESTS=$(pwd)
 PATH_TO_apgdiff="$PATH_TO_TESTS/tools/apgdiff-2.4/"
@@ -318,7 +318,7 @@ counter=0
 for options in "${TESTS_OPTIONS[@]}"
 do
 
-	eval $INTERPRETER "$PATH_TO_XTD$TASK.$EXTENSION" ${options}
+	eval $INTERPRETER "$PATH_TO_XTD/$TASK.$EXTENSION" ${options}
 	code=$?
 
 	if [[ $code -ne "${TESTS_RET_CODES[$counter]}" ]]; then
