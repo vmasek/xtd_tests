@@ -2,7 +2,7 @@
 
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 # IPP - xtd - !!! UPRAVENE !!! doplňkové testy - 2014/2015
-# 		by xmasek15
+# 		by xmasek15 + extedned tests xholub31
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 # Činnost: 
 # - vytvoří výstupy studentovy úlohy v daném interpretu na základě sady testů
