@@ -13,9 +13,11 @@ priadny `--hide` prepinac pre skript ktory "schova" OK testy a bude zobrazovat i
 
 Testy upravene a doplnene, par testov opravenych, pokial niekto najdete chybne alebo zavadzajuce vystupy prosim oznamit smile emoticon opravim, ak niekomu pada hned prvy test tak upozornujem ze v pripade --help ocakavam spravanie err.code=0 ak iba --help, ak su aj dalsie prarametre okrem neho zadane tak ocakavam chybu.
 
+## XTD project
+https://github.com/Shootervm/IPP-project-XTD
 
 
-(Readme ponechane z minulej testovacej sady)
+#### (Readme ponechane z minulej testovacej sady)
 
 Struktura skriptu _stud_tests.sh (v kódování UTF-8):
 Každý test zahrnuje až 4 soubory (vstupní soubor, případný druhý vstupní 
